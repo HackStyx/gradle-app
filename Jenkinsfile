@@ -15,9 +15,9 @@ pipeline{
             sh './gradlew build'
           }
     }
-          stage('run'){
+    stage('run'){
           steps{
-            git './gradlew run'
+            sh './gradlew run'
           }
     }
   }
